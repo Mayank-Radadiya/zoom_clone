@@ -41,6 +41,10 @@ export default {
         yellow: {
           1: "#F9A90E",
         },
+      },
+       backgroundImage: {
+          hero: "url('/images/hero-background.png')",
+        },
         keyframes: {
           "accordion-down": {
             from: { height: "0" },
@@ -55,9 +59,7 @@ export default {
           "accordion-down": "accordion-down 0.2s ease-out",
           "accordion-up": "accordion-up 0.2s ease-out",
         },
-        backgroundImage: {
-          hero: "url('/images/hero-background.png')",
-        },
+
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
@@ -98,7 +100,6 @@ export default {
           "4": "hsl(var(--chart-4))",
           "5": "hsl(var(--chart-5))",
         },
-      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",

@@ -6,10 +6,9 @@ interface pageProps {
   };
 }
 
-const Page: FC<pageProps> = ({ params }) => {
-  return <div>{params.id} </div>;
+const Page: FC<pageProps> = async ({ params }) => {
+  const { id } = await params;
+  return <p>ID: {id}</p>;
 };
 
 export default Page;
-
-

@@ -52,7 +52,7 @@ const MeetingModel: FC<MeetingModelProps> = ({
             {children}
             <Button
               className={
-                "bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg shadow-md transition-all duration-300 transform hover:scale-105 hover:shadow-lg active:scale-95 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-offset-1"
+                "bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-[2px] shadow-md transition-all duration-300 transform hover:scale-105 hover:shadow-lg active:scale-95 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-offset-1"
               }
               onClick={handleClick}
             >

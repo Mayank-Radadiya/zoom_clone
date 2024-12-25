@@ -4,8 +4,11 @@ import { Metadata } from "next";
 import { ReactNode } from "react";
 
 export const metadata: Metadata = {
-  title: "ZOOM",
-  description: "A workspace for your team, powered by Stream Chat and Clerk.",
+  title: "Zoom ",
+  description: "Video calling Application",
+  icons: {
+    icon: "/icons/logo.svg",
+  },
 };
 
 const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {

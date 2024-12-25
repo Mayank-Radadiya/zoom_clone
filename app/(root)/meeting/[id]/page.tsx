@@ -31,7 +31,11 @@ const Page: FC = ({}) => {
     <main className="h-screen w-full ">
       <StreamCall call={call}>
         <StreamTheme>
-          {isSetUpComplete ? <MeetingSetup /> : <MeetingRoom />}
+          {!isSetUpComplete ? (
+            <MeetingSetup setIsSetupComplete={setIsComplete} />
+          ) : (
+            <MeetingRoom />
+          )}
         </StreamTheme>
       </StreamCall>
     </main>

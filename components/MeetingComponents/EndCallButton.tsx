@@ -4,9 +4,9 @@ import { FC } from "react";
 import { Button } from "../ui/button";
 import { useRouter } from "next/navigation";
 
-interface EndCallButtonProps {}
 
-const EndCallButton: FC<EndCallButtonProps> = ({}) => {
+
+const EndCallButton: FC = ({}) => {
   const call = useCall(); // get current call info
   const { useLocalParticipant } = useCallStateHooks();
   const localParticipant = useLocalParticipant();

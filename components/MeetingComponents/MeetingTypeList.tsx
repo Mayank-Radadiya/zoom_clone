@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import MeetingModel from "./MeetingModel";
 import { useUser } from "@clerk/nextjs";
 import { Call, useStreamVideoClient } from "@stream-io/video-react-sdk";
-import { toast, useToast } from "@/hooks/use-toast";
+import { useToast } from "@/hooks/use-toast";
 import { Textarea } from "../ui/textarea";
 import { Input } from "@/components/ui/input";
 import ReactDatePicker from "react-datepicker";

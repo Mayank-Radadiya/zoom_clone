@@ -14,7 +14,6 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
@@ -23,10 +22,10 @@ import { Button } from "../ui/button";
 import { useSearchParams } from "next/navigation";
 import EndCallButton from "./EndCallButton";
 
-interface MeetingRoomProps {}
+
 type CallLayout = "grid" | "speaker-left" | "speaker-right";
 
-const MeetingRoom: FC<MeetingRoomProps> = ({}) => {
+const MeetingRoom: FC = ({}) => {
   const [layout, setLayout] = useState<CallLayout>("speaker-left");
   const [showParticipants, setShowParticipants] = useState(false);
 

@@ -7,9 +7,8 @@ import { usePathname } from "next/navigation";
 import { FC } from "react";
 import Image from "next/image";
 
-interface SidebarProps {}
 
-const Sidebar: FC<SidebarProps> = ({}) => {
+const Sidebar: FC = ({}) => {
   const pathname = usePathname();
   return (
     <>

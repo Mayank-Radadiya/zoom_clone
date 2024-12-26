@@ -4,13 +4,11 @@ import { FC } from "react";
 import { Button } from "../ui/button";
 import { useRouter } from "next/navigation";
 
-
-
 const EndCallButton: FC = ({}) => {
   const call = useCall(); // get current call info
   const { useLocalParticipant } = useCallStateHooks();
   const localParticipant = useLocalParticipant();
-  // if call end then navigate to home page
+  // if call end then navigate to home Page
   const router = useRouter();
 
   if (!call)

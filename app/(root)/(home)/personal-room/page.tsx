@@ -26,7 +26,7 @@ const Table = ({
   );
 };
 
-const page: FC = ({}) => {
+const Page: FC = ({}) => {
   const router = useRouter();
   const { user } = useUser();
   const client = useStreamVideoClient();
@@ -82,4 +82,4 @@ const page: FC = ({}) => {
   );
 };
 
-export default page;
+export default Page;

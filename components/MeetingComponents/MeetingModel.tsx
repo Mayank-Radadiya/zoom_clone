@@ -25,13 +25,10 @@ const MeetingModel: FC<MeetingModelProps> = ({
   isOpen,
   onClose,
   title,
-  className,
   children,
   handleClick,
   buttonText,
-  instantMeeting,
   image,
-  buttonClassName,
   buttonIcon,
 }) => {
   return (

@@ -13,6 +13,7 @@ const Page: FC = ({}) => {
   const { id } = useParams();
   if (!id) redirect("/");
   const { user, isLoaded } = useUser();
+  if (!user) redirect("/sign-in");
 
   const [isSetUpComplete, setIsComplete] = useState(false);
 
